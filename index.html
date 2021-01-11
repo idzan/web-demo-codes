@@ -5,8 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        .webcam {
+            margin-left: 5rem;
+            margin-right: 5rem;
+        }
+        .webcam, .content {
+            padding-left: 3rem;
+            padding-right: 3rem;
+        }
+        iframe[src*="ipcamlive.com"] {
+            width: 100%;
+            height: auto;
+            aspect-ratio: 16/9;
+        }
+    </style>
 </head>
 <body>
-    <video id="mediaplaybackdiv_videoplayer" muted="" preload="none" style="width: 100%; height: 100%; background-color: rgb(0, 0, 0); display: block; object-fit: fill;" src="blob:https://g0.ipcamlive.com/9c0d4c60-27b5-44f0-9ddb-3291fbf5e51b" poster="https://s24.ipcamlive.com/streams/18knfmjcqtzzybnxh/snapshot.jpg">Your browser does not capable to play this content.</video>
+    <div class="webcam">
+        <iframe src="https://g0.ipcamlive.com/player/player.php?alias=adriaski" width="480" height="360" frameborder="0" allowfullscreen=""></iframe>
+    </div>
+    <div class="content">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus fugiat voluptatem a officiis, vitae nisi eum repellat dolorum, distinctio, ex quam ratione voluptatum beatae eligendi? Mollitia illum provident laboriosam.
+    </div>
 </body>
 </html>
